@@ -1,8 +1,25 @@
 .navbar{
-  box-shadow: 0px 3px 5px rgba(0,0,0,.1);
+  box-shadow: 0px 3px 5px rgba(214, 21, 21, 0.1);
   margin-bottom: 2rem;
   font-size: 1em;
+  font-family: 'Noto Sans', sans-serif;
+  
+
+  
 }
 .sombra{
-  text-shadow: 0 0 1em rgba(0,0,0,.1);
+  text-shadow: 0 0 1em rgba(214, 21, 21, 0.1);
 }
+
+#nav1{
+  background-color: black;
+}
+a{
+  color: wheat;
+}
+#icono1{
+  color: wheat;
+}
+
+
+

@@ -1,4 +1,13 @@
 .card{
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(194, 35, 35, 0.1);
   border-radius: 0.4em;
+  font-family: 'RocknRoll One', sans-serif;
+}
+body{
+  background: url(assets/img/fondo2.jpg) no-repeat center top;
+  
+  
+}
+button{
+  background-color: darkred;
 }

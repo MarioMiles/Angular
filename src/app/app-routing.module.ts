@@ -16,6 +16,7 @@ import { LoteriaComponent } from './componentes/loteria/loteria.component';
 import { MultiplicarComponent } from './componentes/multiplicar/multiplicar.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { TuberiasComponent } from './componentes/tuberias/tuberias.component';
+import { ListaPerfilesComponent } from './componentes/lista-perfiles/lista-perfiles.component';
 
 const routes: Routes = [
   {path: "", component:HomeComponent},
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: "registro", component:RegisterComponent},
   {path: "login", component:LoginComponent},
   {path: "perfil", component:PerfilComponent, canActivate:[UserRouterGuard]},
+  {path: "listaPerfiles", component:ListaPerfilesComponent},
   {path: "**", component: HomeComponent}
 ];
 

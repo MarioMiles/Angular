@@ -17,15 +17,15 @@
         <form [formGroup]='formNuevo' (ngSubmit)='crearNota(formNuevo.value)'>
           <input class="form-control" type="text" formControlName="titulo" placeholder="Título">
           <input class="form-control" type="text" formControlName="contenido" placeholder="Contenido">
-          <button class="btn btn-primary btn-block" type="submit" 
+          <button class="btn btn-primary btn-block" type="submit" style="background-color: darkred;" 
             *ngIf='!formNuevo.value.id; else editar' [disabled]='formNuevo.invalid'>Crear nota</button>
           <ng-template #editar>
             <div class="btn-group btn-block">
-              <button class="btn btn-danger" type='button'
+              <button class="btn btn-danger" type='button' style="background-color: darkred;"
                 (click)='eliminarNota()' [disabled]='!formNuevo.value.id'>Eliminar nota</button>
-              <button class="btn btn-success" type='button'
+              <button class="btn btn-success" type='button' style="background-color: darkred;"
                 (click)='editarNota()' [disabled]='formNuevo.invalid'>Editar nota</button>
-              <button class="btn btn-secondary" type='button'
+              <button class="btn btn-secondary" type='button' style="background-color: darkred;"
                 (click)='formNuevo.reset()'>Cancelar</button>
             </div>
           </ng-template>
@@ -35,7 +35,7 @@
         <div class="input-group">
             <input class="form-control" type="text" [(ngModel)]="notaNueva.titulo" placeholder="Título">
             <input class="form-control" type="text" [(ngModel)]="notaNueva.contenido" placeholder="Contenido">
-            <button  class="btn btn-primary btn-block" (click)="crearNota(notaNueva)">Insertar nota</button>
+            <button style="background-color: darkred;" class="btn btn-primary btn-block" (click)="crearNota(notaNueva)">Insertar nota</button>
         </div>
         <div class="input-group">
             <input (input)='buscarConRetraso()' class="form-control" type="text" [(ngModel)]="busqueda" placeholder="Buscar...">
